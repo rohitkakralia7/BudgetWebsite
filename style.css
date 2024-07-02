@@ -1,0 +1,178 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif;
+}
+body{
+    height: 100vh;
+    width: 100%;
+}
+.wrapper{
+    display: grid;
+    place-content: center;
+    margin-top: 70px;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+}
+.container{
+    height: 100vh;
+    width: 100%;
+}
+.heading{
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    padding-left: 10px;
+    color: blue;
+    height: 50px;
+    width: 100%;
+}
+.sub-container{
+    display: flex;
+    width: 100%;
+    height: 200px;
+}
+.total_expense{
+    background-color: white;
+    box-shadow: 2px 6px 6px rgb(172, 172, 172);
+    width: 50%;
+    padding: 15px;
+}
+.total_expense .input{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.input{
+    width: 98%;
+    height: 30px;
+    padding: 10px;
+    border: 1px solid;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.submit{
+    width: 40%;
+    height: 30px;
+    background-color: rgb(96, 96, 249);
+    color: white;
+    border: 1px solid rgb(96, 96, 249);
+    border-radius: 5px;
+}
+.expence{
+    width: 50%;
+    background-color: white;
+    box-shadow: 2px 6px 6px rgb(172, 172, 172);
+    margin-left: 40px;
+    padding: 15px;
+}
+.set-budget{
+    width: 50%;
+    height: 30px;
+    background-color: rgb(96, 96, 249);
+    color: white;
+    border: 1px solid rgb(96, 96, 249);
+    border-radius: 5px;
+}
+.display-total-amount{
+    background-color: rgb(96, 96, 249);
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 100px;
+    margin-top: 40px; 
+    border-radius: 5px;
+}
+.display-total-amount .common{
+    color: white;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.display-total-amount p{
+    margin-top: 10px;
+}
+.expence_list{
+    background-color: white;
+    box-shadow: 2px 6px 6px rgb(172, 172, 172);
+    width: 100%;
+    min-height: 80px;
+    margin-top: 40px;
+    border-top: 5px solid rgb(96, 96, 249);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    padding-top: 20px;
+
+}
+/* .bars{
+    background-color: antiquewhite;
+    margin-top: 25px;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+}
+.bar1{
+    width: 90%;
+    height: 60px;
+    background-color: aqua;
+}
+.barPer{
+    background-color: red;
+    width: 95%;
+    height: 10px;
+}
+.slider{
+    height: 100%;
+} */
+
+
+.list-item{
+    margin-top: 20px;
+    margin-bottom: 10px;
+     display: flex;
+     justify-content: space-between;
+     padding-right: 40px;
+     padding-left: 10px;
+     height: 30px;
+     align-items: center;
+     border-left: 3px solid rgb(96, 96, 249);
+}
+.list-item .name{
+    font-size: 25px;
+}
+.list-item .fontSize{
+    font-size: 15px;
+}
+@media only screen and (max-width: 470px){
+    .wrapper{
+        margin-top: 30px;
+    }
+    .sub-container{
+       display: flex;
+       flex-direction: column;
+       height: 368px;
+    }
+    .total_expense{
+        height: 300px;
+        width: 100%;
+        margin-top: 14px;
+    }
+    .expence{
+        margin-top: 30px;
+        margin-bottom: 30px;
+        margin-left: 0;
+        width: 100%;
+    }
+    
+}
+@media only screen and (max-width: 368px){
+    .common span{
+       font-size: 13px;
+    }
+}

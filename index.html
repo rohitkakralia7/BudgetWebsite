@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/5ce4287101.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <div class="heading">BUDGET APPLICATION</div>
+            <div class="sub-container">
+                <div class="total_expense">
+                    <h3>Budget</h3>
+                    <input type="number" id="total-amount" class="input"placeholder="Enter Budget">
+                    <button class="submit" id="total-amount-button">Set Budget</button>
+                </div>
+                <div class="expence">
+                      <h3>Expence <span style="margin-left: 150px;"><input type="date" id="date-of-expense"></span></h3>
+                      <input type="text" id="name-of-expence" class=" product-title input" placeholder="Enter Product Title">
+                      <input type="number" id="amount-of-expence" class="input" placeholder="Enter Cost Of Product">
+                      <button class="set-budget" id="check-amount"> Check Amount</button>
+                </div>
+            </div>
+            <div class="display-total-amount">
+                <div class="total_budget common"> 
+                    <span>Total Budget</span>
+                    <p id="amount" class="total_budget_amount">0</p>
+                </div>
+                <div class="total_expence common">
+                    <span>Total Expence</span>
+                    <p id="expenditure-value" class="total_expence_amount">0</p>
+                </div>
+                <div class="total_balance common">
+                    <span>Total Balance</span>
+                    <p id="balance_amount" class="total_balance_amount">0</p>
+                </div>
+            </div>
+            <!-- <div class="bars">
+                <div class="bar1">
+                    <span class="title">Total Budget
+                        <p class="percentage">0%</p>
+                    </span>
+                    <div class="barPer">
+                        <div class="slider"></div>
+                    </div>
+                    
+                </div>
+                <div class="bar1">
+                    <span class="title" id="expense">Totalexpense
+                        <p class="percentage">0%</p>
+                    </span>
+                    <div class="barPer">
+                        <div class="slider2"></div>
+                    </div>
+                    
+                </div> -->
+            <!-- </div> -->
+            <div class="expence_list">
+                <h3>Expence List</h3>
+                <div class="list-container" id="list">
+                    
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="budget.js"></script>
+</body>
+</html>
